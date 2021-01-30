@@ -32,5 +32,12 @@ public class Aplicatie extends AppCompatActivity {
             }
         });
 
+        adaugareActiv.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                Intent intent = new Intent(Aplicatie.this, AdaugareOrar.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

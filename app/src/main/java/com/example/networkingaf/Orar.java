@@ -5,13 +5,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+
+//import com.example.networkingaf.data.OrarViewModel;
 
 import java.util.ArrayList;
 
 public class Orar extends AppCompatActivity {
+
+    //private OrarViewModel orarViewModel;
 
     private RecyclerView myRecycleView;
     private RecyclerView.Adapter myAdapter;
@@ -20,9 +27,12 @@ public class Orar extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.orar_vreme);
 
+        // nu inteleg cum il leg acu aici
+        //orarViewModel =
 
         Button inapoi = (Button) findViewById(R.id.butonInapoiOrar);
         inapoi.setOnClickListener(new View.OnClickListener(){
