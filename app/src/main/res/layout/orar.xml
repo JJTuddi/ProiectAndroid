@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/idCardview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="1dp"
+    android:outlineSpotShadowColor="@color/black"
+    app:cardCornerRadius="8dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="4dp"
+        >
+        <ImageView
+            android:id="@+id/imagineVreme"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/priscilla_du_preez_tfu0r745deo_unsplash"
+            android:layout_marginRight="4dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/imagineVreme">
+            <TextView
+                android:id="@+id/titluActivitate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Titlu activitate"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"></TextView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    tools:srcCompat="@drawable/ic_baseline_access_time_24" />
+                <TextView
+                    android:id="@+id/oreActivitate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:textStyle="bold"
+                    android:text="ora:min inceput - ora:min finalizare"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    tools:srcCompat="@drawable/ic_baseline_info_24" />
+                <TextView
+                    android:id="@+id/despreActivitate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date despre vreme" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    tools:srcCompat="@drawable/ic_baseline_location_on_24" />
+                <TextView
+                    android:id="@+id/locatieActivitate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Locatie"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/sfat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8dp"
+                android:text="Sfat"
+                android:layout_marginLeft="16dp"
+                ></TextView>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
